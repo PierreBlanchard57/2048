@@ -1,0 +1,118 @@
+[gd_scene load_steps=6 format=3 uid="uid://dj2tuf1cgncho"]
+
+[ext_resource type="Script" uid="uid://h6xebmem84nd" path="res://Game.cs" id="1_wbfu4"]
+[ext_resource type="PackedScene" uid="uid://bwt6r8nyi4cxv" path="res://ResetButton.tscn" id="2_xkndl"]
+[ext_resource type="PackedScene" uid="uid://bukfwloggfi4m" path="res://MenuButton.tscn" id="3_u44n3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wbfu4"]
+font_size = 53
+font_color = Color(0, 0.678768, 0.679522, 1)
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 0.67451)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xkndl"]
+font_size = 46
+font_color = Color(5.87195e-06, 0.696981, 0.698748, 1)
+shadow_size = 7
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.02743, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.0205, 16.2203)
+
+[node name="TileContainer" type="ColorRect" parent="." node_paths=PackedStringArray("scoreLabel", "endScoreLabel", "bestScoreLabel", "looseScreen")]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 633.0
+offset_bottom = 633.0
+color = Color(0.654232, 0.654232, 0.654232, 1)
+script = ExtResource("1_wbfu4")
+scoreLabel = NodePath("../ScoreLabel")
+endScoreLabel = NodePath("../LooseScreen/EndScoreLabel")
+bestScoreLabel = NodePath("../bestScoreLabel")
+looseScreen = NodePath("../LooseScreen")
+
+[node name="ScoreLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 791.295
+offset_top = 137.0
+offset_right = 852.295
+offset_bottom = 160.0
+text = "Score: 0"
+
+[node name="bestScoreLabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 727.057
+offset_top = 94.0
+offset_right = 856.057
+offset_bottom = 143.0
+text = "Meilleur Score: 0
+"
+
+[node name="ResetButton" parent="." instance=ExtResource("2_xkndl")]
+layout_mode = 0
+offset_left = 746.523
+offset_top = 184.0
+offset_right = 913.523
+offset_bottom = 246.0
+
+[node name="MenuButton" parent="." instance=ExtResource("3_u44n3")]
+layout_mode = 0
+offset_left = 745.0
+offset_top = 281.0
+offset_right = 916.0
+offset_bottom = 345.0
+
+[node name="LooseScreen" type="ColorRect" parent="."]
+visible = false
+z_index = 10
+layout_mode = 0
+offset_right = 1120.0
+offset_bottom = 651.0
+color = Color(0, 0, 0, 0.501961)
+
+[node name="Label" type="Label" parent="LooseScreen"]
+layout_mode = 0
+offset_left = 364.015
+offset_top = 35.0
+offset_right = 764.015
+offset_bottom = 108.0
+text = "Partie terminée"
+label_settings = SubResource("LabelSettings_wbfu4")
+
+[node name="EndScoreLabel" type="Label" parent="LooseScreen"]
+layout_mode = 0
+offset_left = 464.265
+offset_top = 155.0
+offset_right = 676.265
+offset_bottom = 232.0
+text = "Score: 0"
+label_settings = SubResource("LabelSettings_xkndl")
+
+[node name="ResetButton" parent="LooseScreen" instance=ExtResource("2_xkndl")]
+layout_mode = 0
+offset_left = 470.105
+offset_top = 294.0
+offset_right = 682.105
+offset_bottom = 365.0
+
+[node name="MenuButton" parent="LooseScreen" instance=ExtResource("3_u44n3")]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 414.0
+offset_right = 684.0
+offset_bottom = 483.0

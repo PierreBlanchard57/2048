@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pierre\\Documents\\2048\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5F713-1269-4BDE-B3D3-0515659A4EFD}|2048.csproj|c:\\users\\pierre\\documents\\2048\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FB5F713-1269-4BDE-B3D3-0515659A4EFD}|2048.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB5F713-1269-4BDE-B3D3-0515659A4EFD}|2048.csproj|c:\\users\\pierre\\documents\\2048\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FB5F713-1269-4BDE-B3D3-0515659A4EFD}|2048.csproj|solutionrelative:tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Pierre\\Documents\\2048\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\Pierre\\Documents\\2048\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T22:48:37.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "C:\\Users\\Pierre\\Documents\\2048\\Tile.cs",
+              "RelativeDocumentMoniker": "Tile.cs",
+              "ToolTip": "C:\\Users\\Pierre\\Documents\\2048\\Tile.cs",
+              "RelativeToolTip": "Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:33:47.029Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

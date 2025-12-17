@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://6b5k8nld68v0"]
+
+[ext_resource type="Script" uid="uid://bbnaroejol1v2" path="res://PlayButton.cs" id="1_i26rj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kjwba"]
+font_size = 126
+font_color = Color(1.92523e-07, 0.52621, 0.527033, 1)
+shadow_size = 11
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 647.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 406.0
+offset_right = 718.0
+offset_bottom = 347.0
+text = "2048"
+label_settings = SubResource("LabelSettings_kjwba")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 203.0
+offset_right = 720.0
+offset_bottom = 316.0
+text = "Jouer
+"
+script = ExtResource("1_i26rj")
